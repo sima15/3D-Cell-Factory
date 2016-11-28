@@ -72,9 +72,9 @@ public class Pruner {
 		Graph threeLevelPruned = pruneLevel3(twoLevelPruned);
         System.out.println("Number of edges in pruned level 3 = edges: "+ threeLevelPruned.getEdges().size()
         		+ " vertices: "+ threeLevelPruned.getVertices().size());
-//        
+        new WriteToFile( threeLevelPruned, "data\\GraphPrunedLevel3.wrl");  
         System.out.println("duration = "+ (System.currentTimeMillis()-startTime)/1000);
-		return oneLevelPruned;
+		return threeLevelPruned;
 	}
 	
 // *********************************************	
@@ -294,6 +294,12 @@ public class Pruner {
 	}
 	
 	// ****************************************************	
+	/**
+	 * An incomlete implementation of graph pruning based on spatial closeness
+	 * @param graph The graph to be pruned
+	 * @param extra An unneeded parameter to dustinguish this method from the one above
+	 * @return pruned graph
+	 */
 		public Graph pruneLevel1(Graph graph, int extra){
 			Graph pGraph = new Graph();
 			Iterator<Vertex> verIter = graph.getVertices().iterator();
