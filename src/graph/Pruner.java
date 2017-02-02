@@ -295,9 +295,9 @@ public class Pruner {
 	
 	// ****************************************************	
 	/**
-	 * An incomlete implementation of graph pruning based on spatial closeness
+	 * An incomplete implementation of graph pruning based on spatial closeness
 	 * @param graph The graph to be pruned
-	 * @param extra An unneeded parameter to dustinguish this method from the one above
+	 * @param extra An unneeded parameter to distinguish this method from the one above
 	 * @return pruned graph
 	 */
 		public Graph pruneLevel1(Graph graph, int extra){

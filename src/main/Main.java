@@ -8,12 +8,13 @@ import graph.Edge;
 import graph.Graph;
 import graph.Pruner;
 import graph.Vertex;
+import graph.CycleFinder;
 import utils.XMLParser;
 
 /**
  * A class that creates a 3D graph from a given .xml file and prunes and simplifies it 
  * to get a very simple, small graph. 
- * @author Sima
+ * @author Sima Mehri
  *
  */
 public class  Main {
@@ -33,6 +34,8 @@ public class  Main {
 
         Graph pruned = new Pruner().startPruning(primGraph);
         new WriteToFile( pruned, "GraphPruned.wrl");
+        
+        CycleFinder cycles = new CycleFinder(pruned);
 	 }
 
 }

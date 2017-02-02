@@ -4,6 +4,5 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="/iDynoMiCS"/>
 	<classpathentry exported="true" kind="lib" path="/ImageProcessor/src/lib/jdom-2.0.6.jar"/>
-	<classpathentry kind="lib" path="C:/Sima/Updated Workspace/jgrapht-1.0.0/jgrapht-1.0.0/lib/antlr4-runtime-4.5.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
