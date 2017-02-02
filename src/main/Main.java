@@ -35,7 +35,8 @@ public class  Main {
         Graph pruned = new Pruner().startPruning(primGraph);
         new WriteToFile( pruned, "GraphPruned.wrl");
         
-        CycleFinder cycles = new CycleFinder(pruned);
+        CycleFinder cycleFinder = new CycleFinder(pruned);
+        ArrayList<ArrayList<Edge>> cycles = cycleFinder.findCycles();
 	 }
 
 }

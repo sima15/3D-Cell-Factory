@@ -31,7 +31,7 @@ public class CycleFinder {
 	/**
 	 * Finds the minimal cycles inside a connected undirected graph
 	 */
-	private void findCycles() {
+	public ArrayList<ArrayList<Edge>> findCycles() {
 		ArrayList<Edge> cycle;
 		Edge temp;
 		for(Vertex v1: graph.getVertices()){
@@ -54,7 +54,7 @@ public class CycleFinder {
 						
 				}
 		}
-
+		return cycles;
 	}
 	
 	/**
